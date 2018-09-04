@@ -38,7 +38,7 @@ etcd_object_counts | Number of stored objects at the time of last check split by
 Name | Description | 中文描述 | 备注
 ---------|-------------|---------|-------------
 transformation_latencies_microseconds | Latencies in microseconds of value transformation operations
-transformation_failures_total | Total number of failed transformation operations | envelope_transformation_cache_misses_total
+transformation_failures_total | Total number of failed transformation operations 
 envelope_transformation_cache_misses_total | Total number of cache misses while accessing key decryption key(KEK)
 data_key_generation_latencies_microseconds | Latencies in microseconds of data encryption key(DEK) generation operations
 data_key_generation_failures_total | Total number of failed data encryption key(DEK) generation operations
