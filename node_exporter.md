@@ -11,21 +11,17 @@ cache_bypass_hits_total | Hits for IO intended to skip the cache
 cache_bypass_misses_total | Misses for IO intended to skip the cache
 cache_miss_collisions_total | Instances where data insertion from cache miss raced with write (data already present)
 cache_readaheads_total | Count of times readahead occurred
-
 average_key_size_sectors | Average data per key in the btree (sectors) | | metrics in /sys/fs/bcache/<uuid>/
 btree_cache_size_bytes | Amount of memory currently used by the btree cache || metrics in /sys/fs/bcache/<uuid>/
 cache_available_percent | Percentage of cache device without dirty data, usable for writeback (may contain clean cached data)||metrics in /sys/fs/bcache/<uuid>/
 congested | Congestion || metrics in /sys/fs/bcache/<uuid>/
 root_usage_percent | Percentage of the root btree node in use (tree depth increases if too high)||metrics in /sys/fs/bcache/<uuid>/
 tree_depth | Depth of the btree||metrics in /sys/fs/bcache/<uuid>/
-
 active_journal_entries | Number of journal entries that are newer than the index || metrics in /sys/fs/bcache/<uuid>/internal/
 btree_nodes | Total nodes in the btree || metrics in /sys/fs/bcache/<uuid>/internal/
 btree_read_average_duration_seconds | Average btree read duration || metrics in /sys/fs/bcache/<uuid>/internal/
 cache_read_races_total | Counts instances where while data was being read from the cache, the bucket was reused and invalidated - i.e. where the pointer was stale after the read completed || metrics in /sys/fs/bcache/<uuid>/internal/
-
 dirty_data_bytes | Amount of dirty data for this backing device in the cache || metrics in /sys/fs/bcache/<uuid>/<bdev>/
-
 io_errors | Number of errors that have occurred, decayed by io_error_halflife || metrics in /sys/fs/bcache/<uuid>/<cache>/
 metadata_written_bytes_total | Sum of all non data writes (btree writes and all other metadata) ||metrics in /sys/fs/bcache/<uuid>/<cache>/
 written_bytes_total | Sum of all data that has been written to the cache || metrics in /sys/fs/bcache/<uuid>/<cache>/
